@@ -1,165 +1,108 @@
-# modmate-site
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ModMate for Xbox</title>
-<style>
-  @import url('[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;600&display=swap)');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ModMate</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Smooth fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-  body {
-    margin: 0;
-    font-family: Inter, sans-serif;
-    background: #0a0a0e;
-    color: #fff;
-  }
+    /* Button glow */
+    .glow:hover {
+      box-shadow: 0 0 20px rgba(59,130,246,0.7);
+      transform: scale(1.05);
+    }
 
-  header {
-    padding: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
-    font-family: Orbitron, sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    color: #00ff9d;
-    letter-spacing: 2px;
-  }
-
-  nav a {
-    color: #ccc;
-    margin-left: 25px;
-    text-decoration: none;
-    transition: 0.2s;
-  }
-  nav a:hover { color: #00ff9d; }
-
-  .hero {
-    padding: 120px 20px;
-    text-align: center;
-    background: radial-gradient(circle at center, #1d1f2b, #0a0a0e 70%);
-  }
-
-  .hero h1 {
-    font-family: Orbitron, sans-serif;
-    font-size: 60px;
-    margin-bottom: 10px;
-    color: #00ffcb;
-    text-shadow: 0 0 20px #00ffcb66;
-  }
-
-  .hero p {
-    font-size: 22px;
-    color: #aaa;
-    max-width: 600px;
-    margin: 0 auto 40px;
-  }
-
-  .cta-btn {
-    display: inline-block;
-    padding: 16px 35px;
-    font-size: 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    background: #00ff9d;
-    color: #0a0a0e;
-    font-weight: 700;
-    transition: 0.2s;
-  }
-  .cta-btn:hover { background: #00ffcb; }
-
-  .section {
-    padding: 80px 20px;
-    max-width: 900px;
-    margin: auto;
-  }
-
-  .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
-  }
-
-  .feature-card {
-    background: #14141b;
-    border: 1px solid #1f2330;
-    border-radius: 12px;
-    padding: 25px;
-    transition: 0.25s;
-  }
-  .feature-card:hover {
-    border-color: #00ff9d;
-    transform: translateY(-4px);
-  }
-
-  footer {
-    text-align: center;
-    padding: 30px;
-    color: #666;
-    margin-top: 40px;
-    font-size: 14px;
-  }
-</style>
+    /* Floating animation */
+    .float {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
 </head>
-<body>
+<body class="bg-gray-900 text-white font-sans">
 
-<header>
-  <div class="logo">ModMate</div>
-  <nav>
-    <a href="#features">Features</a>
-    <a href="#download">Download</a>
-    <a href="#about">About</a>
-  </nav>
-</header>
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 fade-in">
+    <h1 class="text-6xl font-bold mb-4 float">ModMate</h1>
+    <p class="text-xl text-gray-300 mb-6">The Ultimate Modding Companion</p>
+    <a href="#download" class="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-2xl shadow-lg glow transition">Get Started</a>
+  </section>
 
-<section class="hero">
-  <h1>ModMate for Xbox</h1>
-  <p>The ultimate companion for modding, tweaking, and optimizing your Xbox experience with style.</p>
-  <a class="cta-btn" href="#download">Get Started</a>
-</section>
+  <!-- Features -->
+  <section class="py-16 px-6 grid md:grid-cols-3 gap-8">
+    <div class="bg-gray-800 p-6 rounded-2xl shadow fade-in hover:scale-105 transition">
+      <h2 class="text-2xl font-semibold mb-2">Easy Setup</h2>
+      <p class="text-gray-400">Install mods in minutes with our streamlined process.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-2xl shadow fade-in hover:scale-105 transition">
+      <h2 class="text-2xl font-semibold mb-2">Safe & Secure</h2>
+      <p class="text-gray-400">All files are verified and safe to use.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-2xl shadow fade-in hover:scale-105 transition">
+      <h2 class="text-2xl font-semibold mb-2">Community Driven</h2>
+      <p class="text-gray-400">Join our Discord to connect and share mods.</p>
+    </div>
+  </section>
 
-<section id="features" class="section">
-  <h2>Features</h2>
-  <div class="features">
-    <div class="feature-card">
-      <h3>Instant Mod Switching</h3>
-      <p>Swap configurations on the fly without restarting games or apps.</p>
+  <!-- Instructions -->
+  <section id="download" class="py-16 px-6 bg-gray-800 fade-in">
+    <h2 class="text-3xl font-bold text-center mb-8">How to Install ModMate</h2>
+    <div class="max-w-2xl mx-auto text-gray-300 space-y-4">
+      <p>1. Download the ModMate installer using the button below.</p>
+      <p>2. Open the installer and follow the on-screen instructions.</p>
+      <p>3. Launch ModMate and select your game.</p>
+      <p>4. Browse and install mods directly from the app.</p>
+      <p>5. Restart your game and enjoy!</p>
+      <p class="mt-4">For a full video guide, watch the tutorial below.</p>
     </div>
 
-    <div class="feature-card">
-      <h3>Performance Boosts</h3>
-      <p>Smart tweaks that push your system while keeping things stable.</p>
+    <div class="flex justify-center mt-8">
+      <a href="#" class="bg-green-500 hover:bg-green-600 px-8 py-3 rounded-2xl shadow glow transition">Download ModMate</a>
     </div>
 
-    <div class="feature-card">
-      <h3>Clean UI</h3>
-      <p>Slick cyber‑themed interface made for fast, intuitive use.</p>
+    <div class="flex justify-center mt-10">
+      <iframe class="rounded-2xl shadow-lg hover:scale-105 transition" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
     </div>
+  </section>
 
-    <div class="feature-card">
-      <h3>Cloud Sync</h3>
-      <p>Carry your mod profiles across any Xbox you sign in on.</p>
-    </div>
-  </div>
-</section>
+  <!-- Discord -->
+  <section class="py-16 text-center fade-in">
+    <h2 class="text-3xl font-bold mb-4">Join the Community</h2>
+    <p class="text-gray-400 mb-6">Get help, share mods, and connect with others.</p>
+    <a href="https://discord.gg/YOUR_LINK" class="bg-indigo-500 hover:bg-indigo-600 px-8 py-3 rounded-2xl shadow glow transition">Join Discord</a>
+  </section>
 
-<section id="download" class="section">
-  <h2>Download ModMate</h2>
-  <p>Available soon on the Microsoft Store for Xbox.</p>
-  <a class="cta-btn" href="#">Notify Me</a>
-</section>
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 fade-in">
+    <p>© 2026 ModMate. All rights reserved.</p>
+  </footer>
 
-<section id="about" class="section">
-  <h2>About ModMate</h2>
-  <p>ModMate is designed to give power users and casual players the cleanest, fastest way to manage enhancements on Xbox—no clutter, no bullshit, just power and control.</p>
-</section>
+  <script>
+    // Scroll animation trigger
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
 
-<footer>© 2026 ModMate. All rights reserved.</footer>
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
