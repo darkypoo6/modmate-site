@@ -88,7 +88,7 @@
 
   <!-- Footer -->
   <footer class="py-6 text-center text-gray-500 fade-in">
-    <p>© 2026 ModMate. All rights reserved.</p>
+    <p> 2026 ModMate. All rights reserved.</p>
   </footer>
 
   <script>
