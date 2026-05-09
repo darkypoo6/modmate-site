@@ -68,12 +68,10 @@
       <p>4. Inject them into wormer
       <p>5. Reinstall your game using the "reinstall method" and enjoy!</p>
       <p class="mt-4">For a full video guide, watch the tutorial below.</p>
-    </div>
-
+    </div
     <div class="flex justify-center mt-8">
       <a href="#" class="bg-green-500 hover:bg-green-600 px-8 py-3 rounded-2xl shadow glow transition">Download ModMate</a>
     </div>
-
     <div class="flex justify-center mt-10">
       <iframe class="rounded-2xl shadow-lg hover:scale-105 transition" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
     </div>
