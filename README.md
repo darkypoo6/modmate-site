@@ -62,7 +62,6 @@
   <section id="download" class="py-16 px-6 bg-gray-800 fade-in">
     <h2 class="text-3xl font-bold text-center mb-8">How to Install ModMate</h2>
     <div class="max-w-2xl mx-auto text-gray-300 space-y-4">
-    
       <p>1. Open the installer and follow the on-screen instructions.</p>
       <p>2. Launch ModMate and select your downloader file.</p>
       <p>3. Browse and install mods directly from the app.</p>
