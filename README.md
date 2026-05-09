@@ -16,13 +16,11 @@
       opacity: 1;
       transform: translateY(0);
     }
-
     /* Button glow */
     .glow:hover {
       box-shadow: 0 0 20px rgba(59,130,246,0.7);
       transform: scale(1.05);
     }
-
     /* Floating animation */
     .float {
       animation: float 3s ease-in-out infinite;
