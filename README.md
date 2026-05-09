@@ -62,12 +62,12 @@
   <section id="download" class="py-16 px-6 bg-gray-800 fade-in">
     <h2 class="text-3xl font-bold text-center mb-8">How to Install ModMate</h2>
     <div class="max-w-2xl mx-auto text-gray-300 space-y-4">
-      <p>1. Download the ModMate installer using the button below.</p>
-      <p>2. Open the installer and follow the on-screen instructions.</p>
-      <p>3. Launch ModMate and select your downloader file.</p>
-      <p>4. Browse and install mods directly from the app.</p>
-      <p>5. Inject them into wormer
-      <p>6. Reinstall your game using the "reinstall method" and enjoy!</p>
+    
+      <p>1. Open the installer and follow the on-screen instructions.</p>
+      <p>2. Launch ModMate and select your downloader file.</p>
+      <p>3. Browse and install mods directly from the app.</p>
+      <p>4. Inject them into wormer
+      <p>5. Reinstall your game using the "reinstall method" and enjoy!</p>
       <p class="mt-4">For a full video guide, watch the tutorial below.</p>
     </div>
 
