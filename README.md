@@ -81,9 +81,8 @@
   <section class="py-16 text-center fade-in">
     <h2 class="text-3xl font-bold mb-4">Join the Community</h2>
     <p class="text-gray-400 mb-6">Get help, share mods, and connect with others.</p>
-    <a href="https://discord.gg/YOUR_LINK" class="bg-indigo-500 hover:bg-indigo-600 px-8 py-3 rounded-2xl shadow glow transition">Join Discord</a>
+    <a href="(https://discord.gg/vBjb9Fc8pA)" class="bg-indigo-500 hover:bg-indigo-600 px-8 py-3 rounded-2xl shadow glow transition">Join Discord</a>
   </section>
-<p> 1. https://discord.gg/vBjb9Fc8pA </p>
   <!-- Footer -->
   <footer class="py-6 text-center text-gray-500 fade-in">
     <p> 2026 ModMate. All rights reserved.</p>
